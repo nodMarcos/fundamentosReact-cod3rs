@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+//import {BoaTarde, BoaNoite} from './componentes/Multiplos';
+//import Primeiro from './componentes/Primeiro';
+//import BomDia from './componentes/BomDia';
+//import Saudacao from './componentes/Saudacao';
+import Pai from './componentes/Pai';
+import Filho from './componentes/Filho';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    <div>
+        <Pai nome='Alberto' sobrenome="Jubileu">
+            <Filho nome='Gilberto'/>
+            <Filho nome='Carla' />
+            <Filho nome='Pedro' />
+        </Pai>
+    </div>
+, document.getElementById('root'))
